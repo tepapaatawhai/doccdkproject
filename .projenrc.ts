@@ -1,6 +1,6 @@
 import { awscdk } from 'projen';
 const project = new awscdk.AwsCdkTypeScriptApp({
-  cdkVersion: '2.1.0',
+  cdkVersion: '2.117.0',
   defaultReleaseBranch: 'main',
   name: 'doccdkproject',
   projenrcTs: true,
@@ -10,4 +10,5 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
+project.addGitIgnore('!projectAssets/**');
 project.synth();
