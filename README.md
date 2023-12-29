@@ -55,12 +55,12 @@ For a simple project, without tests, remove the file main.test.ts from /test
 import * as core from 'aws-cdk-lib';
 
 export const dev: core.Environment = {
-  account: '752860630792',
+  account: '11111111111',
   region: 'ap-southeast-2',
 };
 
 export const deploy: core.Environment = {
-  account: '957231369717',
+  account: '222222222222',
   region: 'ap-southeast-2',
 };
 ```
